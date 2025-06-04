@@ -16,30 +16,12 @@ const Loading = () => {
   }, [navigate]);
 
   return (
-    <div
-      style={{
-        width: '100vw',
-        height: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#000',
-        padding: '10px',
-        boxSizing: 'border-box'
-      }}
-    >
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
       <video
         ref={videoRef}
         autoPlay
         muted
-        playsInline
-        style={{
-          width: '90%',
-          maxWidth: '500px',
-          height: 'auto',
-          borderRadius: '12px',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
-        }}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       >
         <source src={V} type="video/mp4" />
         Your browser does not support the video tag.
@@ -49,4 +31,5 @@ const Loading = () => {
 };
 
 export default Loading;
+
 
