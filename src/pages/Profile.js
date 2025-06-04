@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 
 // Set axios defaults
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://shaadistoryfrontend-j9fm.vercel.app';
 
 const Profile = () => {
   const { userId } = useParams();
