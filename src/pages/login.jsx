@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     try {
-      const res = await fetch('https://shaadibackend2.vercel.app/api/users/login', {
+      const res = await fetch('https://shaadistoryfrontend-j9fm.vercel.app/api/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
