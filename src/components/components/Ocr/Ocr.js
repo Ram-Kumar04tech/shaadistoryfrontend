@@ -20,7 +20,7 @@ function OCRComponent() {
       const formData = new FormData();
       formData.append("screenshot", file);
 
-      const res = await axios.post("http://localhost:5000/upload", formData);
+      const res = await axios.post("https://ocrbackend2-24xk.vercel.app/upload", formData);
       setResult(res.data.data);
     } catch (err) {
       setError("Failed to extract data. Please try again with a clear screenshot.");
